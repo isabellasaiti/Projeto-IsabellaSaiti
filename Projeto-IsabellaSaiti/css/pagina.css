@@ -1,0 +1,259 @@
+/* font-family: 'Roboto Mono', monospace; */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  font-family: 'Roboto Mono', cursive;
+  text-shadow: 4px 4px 6px #0000;
+  font-weight: 700;
+  font-size: max(44px, 5.2vw);
+}
+
+h2{
+  font-family: 'Roboto Mono', cursive;
+  text-shadow: 4px 4px 6px #0000;
+  font-weight: 700;
+  font-size: max(20px, 2.8vw);
+}
+
+div.chamada a{
+  font-size: max(16px, 1.0vw);
+  color: #000000;
+  text-decoration: none;
+  padding: 20px 40px;
+  border-radius: 50px;
+  background: #fff200;
+  display: inline-block;
+  animation-name: HeaderA-moverParaCima;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+  transition: .3s ease-in-out;
+  font-weight: 600;
+}
+
+div.chamada a:hover{
+  opacity: .8;
+}
+
+header{
+  max-width:100vw;
+  height:100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.057)) ,url('../img/imagem10G.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+header nav{
+  width: 100%;
+  height: 150px;
+  display:flex;
+  flex-flow: row;
+  align-items: center;
+}
+
+
+header div.chamada{
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header div.chamada h1{
+  color: #ffffff;
+  margin-bottom: 55px;
+  animation-name: HeaderH1-moverParaDireita;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+header div.chamada h2{
+  color: #ffffff;
+  margin-bottom: 55px;
+  animation-name: HeaderH1-moverParaEsquerda;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: backwards;
+}
+
+
+
+section.solucao{
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 5px solid hsla(65, 100%, 50%, 0.324);
+  border-bottom: 5px solid hsla(65, 100%, 50%, 0.324);
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  background-color: #527025;
+
+}
+
+section.solucao h2{
+  margin-top: 40px;
+  margin-bottom: 50px;
+  max-width: 950px;
+  text-align: center;
+  color: #FFF;
+  font-size: max(30px, 2.8vw);
+}
+
+section.solucao div.solucao-mestre{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+section.solucao div.solucao-mestre div.solucao-texto{
+  max-width: 800px;
+  text-align: left;
+  line-height: 1.8;
+
+  margin-bottom: 20px;
+}
+
+section.solucao div.solucao-mestre div.solucao-texto p{
+  width: 95%;
+  margin: auto;
+  color: #FFF;
+  text-shadow: none;
+  font-size: max(23px, 1vw);
+}
+
+section.solucao div.solucao-mestre div.solucao-img{
+  max-width: 400px;
+}
+
+section.solucao div.solucao-mestre div.solucao-img img{
+  max-width: 100%;
+}
+
+footer .logo-and-text {
+  display: flex;
+  align-items: center;
+}
+
+footer .logo-and-text img {
+  width: 130px;
+  height: auto;
+  margin-right: 80px;
+}
+
+footer section {
+  display: flex;
+  border: solid black;
+  background-color: rgb(0, 0, 0);
+  padding: 30px;
+}
+
+footer .titulo {
+  font-size: 30px;
+  margin: 0px;
+  text-align: center;
+}
+
+footer .descricao {
+  font-size: 14px;
+  text-align-last: center;
+}
+
+footer .info{
+  color: #ffffff;
+}
+
+footer .endereco{
+  color:#ffffff;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  margin: 0;
+  padding: 10px 0;
+}
+
+
+/* Contato */
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #547327;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  resize:none;
+}
+
+button {
+  background-color: #BF4904;
+  color: #ffffff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  height: auto;
+  font-size: 10px;
+}
+
+button:hover {
+  background-color: #bf490488;
+}
+
+.logo2000 {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:100px;
+}
+
+.card-texto {
+  display: block;
+  text-align:center;
+  align-items: center;
+}
